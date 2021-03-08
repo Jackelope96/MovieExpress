@@ -1,0 +1,504 @@
+
+.herobanner-text {
+  background-color: transparent;
+  background-image: url(../images/HeroImages/employers-header.jpg);
+  background-size: cover;
+}
+
+.form-control:focus{
+  box-shadow:none;
+}
+
+.form-control{
+  box-shadow:none;
+}
+
+.form-control::-moz-placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.form-control:-ms-input-placeholder {
+  color: white;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: white;
+}
+
+.stay-updated::-moz-placeholder {
+  color: grey;
+  opacity: 1;
+}
+
+.stay-updated:-ms-input-placeholder {
+  color: grey;
+}
+
+.stay-updated::-webkit-input-placeholder {
+  color: grey;
+}
+
+.info-step-box {
+  width: 33.33%;
+  padding: 15px;
+  float: left;
+}
+
+.input-cust:focus{
+  box-shadow:none;
+}
+
+.input-cust {
+  background-color: transparent;
+  border-radius: 0;
+  box-shadow:none;
+  border: 0;
+  /*border-bottom: 2px solid white;*/
+  text-align: left;
+  padding: 19px 16px;
+}
+
+.input-cust-nb {
+  background-color: transparent;
+  border-radius: 0;
+  border: 0;
+  text-align: left;
+  padding: 0;
+  height: auto;
+  font-size: 30px;
+}
+
+  .input-cust-nb.staffSaving {
+    font-size: 26px;
+  }
+
+.input-cust:focus {
+  /*border-bottom: 2px solid white;*/
+}
+
+.calc-cust {
+  background-color: rgba(106, 183, 230, 1);
+  padding: 20px 10px 20px 10px;
+  text-align: center;
+}
+
+.btn-group:hover {
+  background-color: transparent;
+}
+.btn-group:focus{
+  outline:none;
+}
+
+.btn-default .open {
+  background-color: transparent;
+}
+
+.btn-group.open .dropdown-toggle{
+  box-shadow:none;
+}
+.btn-group.open .dropdown-toggle:active{
+  box-shadow:none;
+}
+.btn-default:hover:active, .btn-default.active:hover, .open > .dropdown-toggle.btn-default:hover, .btn-default:focus:active, .btn-default.active:focus,
+.open > .dropdown-toggle.btn-default:focus, .btn-default.focus:active, .btn-default.active.focus, .open > .dropdown-toggle.btn-default.focus {
+  background-color: transparent;
+  border-bottom: none;
+    box-shadow:none;
+}
+
+.dropdown-menu{
+  top:80%;
+}
+
+.btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
+  background-color: transparent;
+  border-bottom: none;
+}
+
+.btn-defaultHov:hover {
+  background-color: transparent;
+}
+
+.how-step {
+  margin: 0px 10px;
+  width: 100%;
+  height: 140px;
+  height: 14.0vw;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+  background-position-y: 20%;
+  font-size: 1.4vw;
+  line-height: 2.1vw;
+  color: #353535;
+  font-family: 'Futura';
+  position: relative;
+}
+
+  .how-step .giveAGap {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    margin: 0;
+  }
+
+
+@media (max-width: 1000px) {
+  .how-step {
+    font-size: 14px;
+    line-height: 21px;
+    height: 140px;
+  }
+}
+
+.how-step-1 {
+  background-image: url(../images/employers/signup-blue.png);
+  background-size: 27%;
+}
+
+.how-step-2 {
+  background-image: url(../images/employers/inform-staff-blue.png);
+  background-size: 45%;
+}
+
+.how-step-3 {
+  background-image: url(../images/employers/staff-apply-blue.png);
+  background-size: 43%;
+}
+
+.how-step-4 {
+  background-image: url(../images/employers/payroll-blue.png);
+  background-size: 30%;
+}
+
+.how-step:hover, .how-step.active {
+  background-color: #38acf4;
+  color: white !important;
+}
+
+.how-step-1:hover, .how-step-1.active {
+  background-image: url(../images/employers/signup-white.png);
+}
+
+.how-step-2:hover, .how-step-2.active {
+  background-image: url(../images/employers/inform-staff-white.png);
+}
+
+.how-step-3:hover, .how-step-3.active {
+  background-image: url(../images/employers/staff-apply-white.png);
+}
+
+.how-step-4:hover, .how-step-4.active {
+  background-image: url(../images/employers/payroll-white.png);
+}
+
+@media (max-width: 768px) {
+
+  .how-step-1 {
+    background-size: 18%;
+  }
+
+    .how-step-1:hover, .how-step-1.active {
+      background-size: 18%;
+    }
+
+
+  .how-step-2 {
+    background-size: 30%;
+  }
+
+    .how-step-2:hover, .how-step-2.active {
+      background-size: 30%;
+    }
+
+  .how-step-3 {
+    background-size: 28%;
+  }
+
+    .how-step-3:hover, .how-step-3.active {
+      background-size: 28%;
+    }
+
+  .how-step-4 {
+    background-size: 18%;
+  }
+
+    .how-step-4:hover, .how-step-4.active {
+      background-size: 18%;
+    }
+}
+
+
+
+.stay-updated {
+  border-radius: 0px !important;
+  padding: 14px;
+  width: 100%;
+  box-shadow: none;
+  border: 2px solid lightgrey;
+  font-size: 14px;
+  height: 51px;
+}
+
+  .stay-updated:focus {
+    border-radius: 0px !important;
+    border-color: rgb(220, 228, 236);
+  }
+
+.stay-updated-btn {
+  border-radius: 0px !important;
+  background-color: white !important;
+  color: #27ae60;
+  border-color: rgb(220, 228, 236) !important;
+  width: 100%;
+  padding: 7px 15px;
+  height: 51px;
+}
+
+  .stay-updated-btn:focus, .stay-updated-btn:active, .stay-updated-btn:enabled {
+    border-radius: 0px;
+    background-color: #27ae60 !important;
+    color: white;
+    border-color: rgb(220, 228, 236);
+    border: none;
+  }
+
+  .stay-updated-btn:hover {
+    color: #27ae60;
+    background-color: white !important;
+  }
+
+  .stay-updated-btn span {
+    font-size: 24px;
+    display: block;
+  }
+
+  .stay-updated-btn:focus span, .stay-updated-btn:hover span {
+    display: block;
+  }
+
+.signup-input {
+  border-radius: 0px;
+  border: 1px rgb(220, 228, 236) solid;
+  box-shadow: none;
+  width: 100%;
+}
+
+.signup-btn {
+  background-color: #e5e5e5 !important;
+  /*#27ae60 !important;*/
+  color: #a6a6a6 !important;
+  width: 100%;
+  height: 66px;
+  border: 0px;
+  font-size: 1.3vw;
+  border: 1px rgb(220, 228, 236) solid;
+  cursor: not-allowed !important;
+}
+
+signup-btn:hover {
+  border-color: white !important;
+}
+
+.signup-btn:enabled {
+  cursor: default !important;
+  background-color: #27ae60 !important;
+  color: white !important;
+}
+
+.signup-btn:focus, .signup-btn:active {
+  background-color: #27ae60 !important;
+  color: white !important;
+  border: none !important;
+}
+
+@media (max-width: 1000px) {
+  .signup-btn {
+    font-size: 13px;
+  }
+}
+
+.what-img {
+  /*width: 50px;*/
+  height: 50px;
+  height: 5vw;
+  margin-bottom: 20px;
+  width: auto;
+}
+
+.what-img-h {
+  height: 36px;
+  /*width: 75px;*/
+  height: 3.6vw;
+  margin-bottom: 20px;
+  width: auto;
+}
+
+.platform-img {
+  background-image: url(../images/employers/ipad.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 15%;
+  padding-left: 10%;
+  padding-right: 10%;
+  width: 100%;
+}
+
+.why-img {
+  height: 65px;
+  height: 6.5vw;
+  width: 80px;
+  width: 8vw;
+}
+
+.PadL12VW {
+  padding-left: 10vw;
+}
+
+.PadR12VW {
+  padding-right: 10vw;
+}
+
+.simon_mounsey {
+  width: 50px;
+  width: 5vw;
+}
+
+.Agilisys2 {
+  width: 100px;
+  width: 10vw;
+}
+
+.hrmagazineLogo {
+  width: 150px;
+  width: 15vw;
+}
+
+@media (min-width:992px) {
+  .input-cust-nb {
+    font-size: 2vw;
+  }
+
+    .input-cust-nb.staffSaving {
+      font-size: 2vw;
+    }
+
+  .input-lg {
+    padding: 20px;
+    font-size: 1.3vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  .input-lg {
+    font-size: 13px;
+  }
+
+  .what-img {
+    height: 50px;
+  }
+
+  .what-img-h {
+    height: 36px;
+  }
+
+  .why-img {
+    height: 65px;
+    width: 80px;
+  }
+
+  .simon_mounsey {
+    width: 50px;
+  }
+
+  .Agilisys2 {
+    width: 100px;
+  }
+
+  .hrmagazineLogo {
+    width: 150px;
+  }
+}
+
+
+@media (max-width: 992px) {
+  .PadL12VW {
+    padding-left: 15px;
+  }
+
+  .PadR12VW {
+    padding-right: 15px;
+  }
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+@media (max-width:768px) {
+  .info-step-box {
+    width: 50%;
+    padding: 10px;
+  }
+}
+
+@media (max-width:480px) {
+  .info-step-box {
+    width: 100%;
+  }
+
+  .stay-updated {
+    font-size: 14px;
+  }
+
+  .input-text-larger {
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px 0;
+    font-weight: 600;
+  }
+
+  .input-cust-nb {
+    padding: 0;
+    margin: 15px 0;
+  }
+}
+
+.FFFutura {
+  font-family: 'Futura';
+}
+
+.noPaddingBottom {
+  padding-bottom: 0;
+}
+
+.BorderBott {
+  border-bottom: none;
+}
+
+
+@media (max-width:767px) {
+  .BorderBott {
+    border-bottom: 2px solid white !important;
+  }
+}
+
+.giveAGap {
+  margin: 20px 0px;
+}
+
+.wrapWithVW58 {
+  width: 50vw;
+}
+
+@media (max-width:768px) {
+  .wrapWithVW58 {
+    width: 100%;
+  }
+}
