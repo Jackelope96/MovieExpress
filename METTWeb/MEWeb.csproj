@@ -94,12 +94,10 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Account\Cart.aspx" />
     <Content Include="Account\ChangePassword.aspx" />
     <Content Include="Account\ErrorPage.aspx" />
     <Content Include="Account\Home.aspx" />
     <Content Include="Account\Login.aspx" />
-    <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="DLLs\Infragistics4.Documents.Word.v12.2.dll" />
     <Content Include="Examples\BasicPage.aspx" />
@@ -151,9 +149,6 @@
     <Content Include="Overview\Library.aspx" />
     <Content Include="Overview\CSLA.aspx" />
     <Content Include="Overview\Overview.aspx" />
-    <Content Include="Products\ProductCategories.aspx" />
-    <Content Include="Products\ProductPaged.aspx" />
-    <Content Include="Products\Products.aspx" />
     <Content Include="Profile\Profile.aspx" />
     <Content Include="Profile\DepositFunds.aspx" />
     <Content Include="Profile\Transactions.aspx" />
@@ -295,13 +290,6 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Account\Cart.aspx.cs">
-      <DependentUpon>Cart.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Account\Cart.aspx.designer.cs">
-      <DependentUpon>Cart.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Account\ChangePassword.aspx.cs">
       <DependentUpon>ChangePassword.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -530,27 +518,6 @@
     <Compile Include="Overview\Overview.aspx.designer.cs">
       <DependentUpon>Overview.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Products\ProductCategories.aspx.cs">
-      <DependentUpon>ProductCategories.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Products\ProductCategories.aspx.designer.cs">
-      <DependentUpon>ProductCategories.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Products\ProductPaged.aspx.cs">
-      <DependentUpon>ProductPaged.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Products\ProductPaged.aspx.designer.cs">
-      <DependentUpon>ProductPaged.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Products\Products.aspx.cs">
-      <DependentUpon>Products.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Products\Products.aspx.designer.cs">
-      <DependentUpon>Products.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Profile\Profile.aspx.cs">
       <DependentUpon>Profile.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -650,10 +617,6 @@
     <Content Include="Theme\Inspinia\font-awesome\scss\_variables.scss" />
     <Content Include="SiteLoggedOut.Master" />
     <Content Include="Site.Master" />
-    <Content Include="Views\Shared\Error.cshtml" />
-    <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\web.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -662,20 +625,16 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
-    <Folder Include="App_Start\" />
     <Folder Include="Assessment\" />
-    <Folder Include="Controllers\" />
-    <Folder Include="Data\" />
     <Folder Include="Faq\" />
     <Folder Include="Images\Singular\" />
+    <Folder Include="Products\" />
     <Folder Include="ProtectedArea\" />
     <Folder Include="Reports\" />
     <Folder Include="Survey\" />
     <Folder Include="TestPages\" />
     <Folder Include="Theme\Singular\Css\Images\Logo\" />
     <Folder Include="Users\" />
-    <Folder Include="Views\Default\" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />

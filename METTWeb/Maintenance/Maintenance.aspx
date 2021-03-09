@@ -12,7 +12,7 @@
   <%
     using (var h = this.Helpers)
     {
-      	//h.HTML().Heading2("Maintenance");
+      //	h.HTML().Heading2("Maintenance");
     }
   %>
 </asp:Content>
@@ -26,9 +26,9 @@
 
   <script type="text/javascript">
     Singular.OnPageLoad(function () {
-      $("#menuItem7").addClass("active");
-      $("#menuItem7 > ul").addClass("in");
-      $("#menuItem7ChildItem0").addClass("subActive");
+      $("#menuItem5").addClass("active");
+      $("#menuItem5 > ul").addClass("in");
+      $("#menuItem5ChildItem0").addClass("subActive");
     });
     $("table").removeClass("Grid").addClass("table-responsive table table-striped table-bordered table-hover Grid SUI-RuleBorder");
   </script>

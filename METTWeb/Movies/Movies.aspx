@@ -91,12 +91,6 @@
                               FilterBtn.AddClass("btn btn-primary btn-outline");
                             }
 
-                            var ResetBtn = RightColContentDiv.Helpers.Button("Reset", Singular.Web.ButtonMainStyle.Primary, Singular.Web.ButtonSize.Normal, Singular.Web.FontAwesomeIcon.None);
-                            {
-                              ResetBtn.AddBinding(Singular.Web.KnockoutBindingString.click, "FilterReset($data)");
-                              ResetBtn.AddClass("btn btn-primary btn-outline");
-                            }
-
                           }
                         }
                       }
@@ -157,20 +151,7 @@
           MEHelpers.Notification(result.ErrorText, 'center', 'warning', 5000);
         }
       })
-      };
-
-      var FilterReset = function (obj) {
-          ViewModel.CallServerMethod('FilterMovies', { MovieGenreID: obj.MovieGenreID(), ResetInd: 1, ShowLoadingBar: true }, function (result) {
-              if (result.Success) {
-                  MEHelpers.Notification("Movies reset successfully.", 'center', 'info', 1000);
-                  ViewModel.MovieList.Set(result.Data);
-                  // Set Drop Down to 'Select'
-              }
-              else {
-                  MEHelpers.Notification(result.ErrorText, 'center', 'warning', 5000);
-              }
-          })
-      };
+    };
 
   </script>
 </asp:Content>

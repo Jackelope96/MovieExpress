@@ -29,14 +29,6 @@ namespace MELib
         }
       }
 
-      public RO.ROProductCategoryList ROProductCategoryList
-      {
-        get
-        {
-          return RegisterList<MELib.RO.ROProductCategoryList>(Misc.ContextType.Application, c => c.ROProductCategoryList, () => { return MELib.RO.ROProductCategoryList.GetROProductCategoryList(); });
-        }
-      }
-
     }
   }
 

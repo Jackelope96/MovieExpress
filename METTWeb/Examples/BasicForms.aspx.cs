@@ -59,10 +59,10 @@ namespace MEWeb.Examples
         //MovieToRemove.TrySave();
         // We cannot save object directly need to add it to a list...
 
-                //COMMENTED OUT BY ME TO TEST OTHER CODE
-        //MELib.Movies.MovieList MovieList = MELib.Movies.MovieList.GetMovieList(MovieID);
-        //MovieList.ToList().ForEach(c => { c.IsActiveInd = false; });
-        //MovieList.TrySave();
+
+        MELib.Movies.MovieList MovieList = MELib.Movies.MovieList.GetMovieList(MovieID);
+        MovieList.ToList().ForEach(c => { c.IsActiveInd = false; });
+        MovieList.TrySave();
 
      //   MovieToRemove.IsActiveInd = false;
      // MovieToRemove.TrySave();

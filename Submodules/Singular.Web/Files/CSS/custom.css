@@ -1,0 +1,154 @@
+/*================================================================
+    custom stylesheet (write your custom css code here)
+==================================================================*/
+/*for demo-showcase demo*/
+section.section-border{
+	
+    border-bottom: 1px solid rgba(0, 0, 0, 0.85);
+}
+
+/*remove this in your production used for demo grids*/
+.demo-show-grid [class^=col-] {
+    padding: 20px;
+    background-color: #eee;
+    background-color: rgb(249, 249, 249);
+    border: 1px solid #ddd;
+    border: 1px solid rgb(221, 221, 221);
+}
+
+form .input-container {
+  border-bottom: 1px dashed #27ae60;
+  color: #27ae60;
+  padding: 6px;
+  margin-left: -6px;
+  margin-right: -6px;
+  display: inline-block;
+  position: relative;
+}
+form .input-container.no-overflow {
+  max-width: 100%;
+}
+form .input-container.no-overflow .input {
+  max-width: 100%;
+}
+form .input-container.no-overflow .input input {
+  max-width: 100%;
+}
+form .input-container:hover {
+  border-bottom: 1px dashed #27ae60;
+  color: #27ae60;
+  cursor: pointer;
+}
+form .input-container.active {
+  z-index: 5000;
+  border-bottom: 1px dashed #27ae60;
+  color: #27ae60;
+  cursor: default;
+}
+form .input-container.active:before {
+  content: '';
+  display: block;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+form .input-container.active .input {
+  visibility: visible;
+  opacity: 1;
+}
+form .input-container .newOption {
+  padding: 6px 46px 6px 6px;
+  background: white;
+  position: relative;
+}
+form .input-container .newOption:hover {
+  background: #ff202f;
+  color: white;
+}
+form .input-container .newOption:hover:after {
+  color: white !important;
+}
+form .input-container .newOption.selected:after {
+  content: '\f00c';
+  font-family: FontAwesome;
+  color: #ff202f;
+  display: block;
+  top: 0;
+  right: 0;
+  height: 72px;
+  width: 46px;
+
+  text-align: center;
+  line-height: 72px;
+  position: absolute;
+}
+form .input-container .placeholder {
+  position: relative;
+  z-index: 1;
+}
+form .input-container .input {
+  display: block;
+  visibility: hidden;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+form input[type="text"], form select[type="text"] {
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 6px;
+  font-weight: 200;
+
+  display: block;
+}
+form input.hidden, form select.hidden {
+  position: absolute;
+  left: -5000px;
+}
+
+.letter-to-employer input[type="text"]{
+    border: 0;
+    display:inline-block !important;
+    border-bottom: 1px solid #27ae60;
+    outline: 0;
+    color:#27ae60;
+}
+
+.letter-to-employer input[type="text"]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #27ae60;
+  opacity:1;
+}
+.letter-to-employer input[type="text"]::-moz-placeholder { /* Firefox 19+ */
+  color: pink;
+}
+.letter-to-employer input[type="text"]:-ms-input-placeholder { /* IE 10+ */
+  color: pink;
+}
+.letter-to-employer input[type="text"]:-moz-placeholder { /* Firefox 18- */
+  color: pink;
+}
+
+
+
+.letter-to-employer input:focus::-webkit-input-placeholder {
+    color: #999;
+}
+
+.letter-to-employer input:focus:-moz-placeholder {
+    color: #999;
+}
+
+.letter-to-employer input:focus::-moz-placeholder {
+    color: red;
+}
+
+.letter-to-employer input:focus:-ms-input-placeholder {
+    color: red;
+}

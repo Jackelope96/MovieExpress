@@ -81,7 +81,6 @@ namespace MEWeb.CustomControls
                         aTagLogout.Helpers.HTML("Log Out");
                     }
                 }
-
             }
             else
             {

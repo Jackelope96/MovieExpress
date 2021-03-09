@@ -46,14 +46,14 @@ namespace MEWeb.Movies
     }
 
     [WebCallable]
-    public Result FilterMovies(int MovieGenreID, string MovieTitle ,int ResetInd)
+    public Result FilterMovies(int MovieGenreID, int ResetInd)
     {
       Result sr = new Result();
       try
       {
         if (ResetInd == 0)
         {
-          MELib.Movies.MovieList MovieList = MELib.Movies.MovieList.GetMovieList(MovieGenreID, MovieTitle);
+          MELib.Movies.MovieList MovieList = MELib.Movies.MovieList.GetMovieList(MovieGenreID);
           sr.Data = MovieList;
         }
         else

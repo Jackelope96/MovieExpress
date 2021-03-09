@@ -41,9 +41,7 @@ namespace MELib.Security
       [Singular.DataAnnotations.TextField, Display(Name="Filter User Name")]
       public string UserName { get; set; }
 
-          
-
-            public static PropertyInfo<String> FirstNameProperty = RegisterSProperty<String>((c) => c.FirstName, "").AddSetExpression("ViewModel.UserListPageManager().Refresh();", false, 300);
+			public static PropertyInfo<String> FirstNameProperty = RegisterSProperty<String>((c) => c.FirstName, "").AddSetExpression("ViewModel.UserListPageManager().Refresh();", false, 300);
 
 			[Display(Name = "First Name", Description = "")]
 			public String FirstName { get; set; }
@@ -61,13 +59,14 @@ namespace MELib.Security
 			public String Filters { get; set; }
 
 			public Criteria()
-            {
-                UserName = string.Empty;
+      {
+        UserName = string.Empty;
 				FirstName = "";
 				LastName = "";
 				EmailAddress = "";
 				Filters = string.Empty;
-		    }
+
+			}
 		}
 
     public void New()
@@ -125,7 +124,7 @@ namespace MELib.Security
 
 						}
 						criteria.AddParameters(command);
-                        command.Parameters.AddWithValue("@UserName", criteria.UserName);
+            command.Parameters.AddWithValue("@UserName", criteria.UserName);
 						command.Parameters.AddWithValue("@EmailAddress", Singular.Misc.NothingDBNull(criteria.EmailAddress));
 						command.Parameters.AddWithValue("@Filters", Singular.Misc.NothingDBNull(criteria.Filters));
 

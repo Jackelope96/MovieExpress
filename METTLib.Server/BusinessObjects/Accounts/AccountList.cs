@@ -65,11 +65,6 @@ namespace MELib.Accounts
       return DataPortal.Fetch<AccountList>(new Criteria());
     }
 
-    public static void AddBalance(int AccountID, decimal AddAmount)
-    {
-
-    }
-
     protected void Fetch(SafeDataReader sdr)
     {
       this.RaiseListChangedEvents = false;
@@ -79,9 +74,6 @@ namespace MELib.Accounts
       }
       this.RaiseListChangedEvents = true;
     }
-
-
-    
 
     protected override void DataPortal_Fetch(Object criteria)
     {
