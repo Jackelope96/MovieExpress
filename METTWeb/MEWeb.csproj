@@ -149,6 +149,7 @@
     <Content Include="Overview\Library.aspx" />
     <Content Include="Overview\CSLA.aspx" />
     <Content Include="Overview\Overview.aspx" />
+    <Content Include="Products\Products.aspx" />
     <Content Include="Profile\Profile.aspx" />
     <Content Include="Profile\DepositFunds.aspx" />
     <Content Include="Profile\Transactions.aspx" />
@@ -285,6 +286,7 @@
     <Content Include="Theme\Singular\Skins\skin_2.css" />
     <Content Include="Theme\Singular\Skins\skin_3.css" />
     <Content Include="Theme\Singular\Skins\undp_skin_light.css" />
+    <Content Include="Users\Users.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -518,6 +520,13 @@
     <Compile Include="Overview\Overview.aspx.designer.cs">
       <DependentUpon>Overview.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Products\Products.aspx.cs">
+      <DependentUpon>Products.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Products\Products.aspx.designer.cs">
+      <DependentUpon>Products.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Profile\Profile.aspx.cs">
       <DependentUpon>Profile.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -568,6 +577,13 @@
     </Compile>
     <Compile Include="SiteLoggedOut.Master.designer.cs">
       <DependentUpon>SiteLoggedOut.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Users\Users.aspx.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\Users.aspx.designer.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -628,13 +644,11 @@
     <Folder Include="Assessment\" />
     <Folder Include="Faq\" />
     <Folder Include="Images\Singular\" />
-    <Folder Include="Products\" />
     <Folder Include="ProtectedArea\" />
     <Folder Include="Reports\" />
     <Folder Include="Survey\" />
     <Folder Include="TestPages\" />
     <Folder Include="Theme\Singular\Css\Images\Logo\" />
-    <Folder Include="Users\" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />

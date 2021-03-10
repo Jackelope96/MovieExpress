@@ -24,7 +24,9 @@ namespace MEWeb.Maintenance
       // Add Maintenance pages here.
       MainSection mainSection = AddMainSection("General");
       mainSection.AddMaintenancePage<MELib.Maintenance.MovieGenreList>("Movie Genres");
-      // Add more lists here for maintaining, e.g. Status List, Years or lookup tables used in the project
-		}
+            mainSection.AddMaintenancePage<MELib.Movies.MovieList>("Movies");
+            mainSection.AddMaintenancePage<MELib.Products.ProductList>("Products");
+            // Add more lists here for maintaining, e.g. Status List, Years or lookup tables used in the project
+        }
 	}
 }

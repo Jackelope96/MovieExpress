@@ -53,7 +53,8 @@ namespace MEWeb.Movies
       {
         if (ResetInd == 0)
         {
-          MELib.Movies.MovieList MovieList = MELib.Movies.MovieList.GetMovieList(MovieGenreID);
+                   
+         MELib.Movies.MovieList MovieList = MELib.Movies.MovieList.GetMovieList(MovieGenreID);
           sr.Data = MovieList;
         }
         else

@@ -70,6 +70,8 @@
     <Compile Include="BusinessObjects\Movies\MovieList.cs" />
     <Compile Include="BusinessObjects\Movies\UserMovie.cs" />
     <Compile Include="BusinessObjects\Movies\UserMovieList.cs" />
+    <Compile Include="BusinessObjects\Products\Product.cs" />
+    <Compile Include="BusinessObjects\Products\ProductList.cs" />
     <Compile Include="BusinessObjects\RO\ROMovieGenre.cs" />
     <Compile Include="BusinessObjects\RO\ROMovieGenreList.cs" />
     <Compile Include="BusinessObjects\RO\ROUser.cs" />
@@ -105,6 +107,9 @@
       <Project>{5f74ab00-b5e2-47a3-8dbe-f726cb3d03cd}</Project>
       <Name>Singular.Web.461</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Release\AjaxMin.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

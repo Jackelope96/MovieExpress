@@ -7,9 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MEWeb.Products {
-    
-    
-    public partial class Products {
+
+namespace MEWeb.Users
+{
+    public partial class Users
+    {
     }
 }
